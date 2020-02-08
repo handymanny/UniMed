@@ -1,0 +1,91 @@
+[
+    {
+      "patientId": "875c9284-9bff-469f-9301-4131e92847fe",
+      "firstName": "Emmanuel",
+      "lastName": "Cunningham",
+      "preferredName": "Manny",
+      "date": "Feb 8, 2020, 1:27:13 PM",
+      "dateOfBirth": "Feb 8, 2020, 1:27:13 PM",
+      "address": "23 Hosking PL",
+      "city": "Guelph",
+      "country": "Canada",
+      "zip": "N1G3R9",
+      "homePhone": "+1 (705) 812-4425",
+      "cellPhone": "+1 (519) 217-3146",
+      "patientHistory": {
+        "heartDisease": 0,
+        "anemia": 0,
+        "arthritis": 1,
+        "asthma": 2,
+        "diabetes": 2,
+        "scarletFever": 1,
+        "stroke": 0,
+        "muscularDystrophy": 2,
+        "polio": 2,
+        "epilepsy": 0,
+        "tuberculosis": 1,
+        "headaches": 2,
+        "rheumatism": 0,
+        "multipleSclerosis": 2,
+        "highBloodPressure": 2,
+        "hepatitis": 2,
+        "cancer": 1,
+        "kidneyDisorder": 0
+      },
+      "labResults": {
+        "labName": "Cancer Tests",
+        "labStartDate": "Feb 8, 2020, 1:27:13 PM",
+        "labDetails": "Lab was inconclusive there is no cancer in this man",
+        "labEndDate": "Feb 8, 2020, 1:27:13 PM"
+      },
+      "procedure": {
+        "checkInDate": "Feb 8, 2020, 1:27:13 PM",
+        "patientId": "875c9284-9bff-469f-9301-4131e92847fe",
+        "procedureNotes": {
+          "submittedBy": "Nurse Bob",
+          "notes": "Sometimes this man is not good"
+        }
+      },
+      "recentHistory": {
+        "previousCheckIns": [
+          {
+            "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+            "id": "0c8fabb3-e7ce-4297-b99c-1a2d9e1c2d7b",
+            "patient": {},
+            "room": {
+              "id": 1
+            },
+            "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+          },
+          {
+            "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+            "id": "8fb625c5-2407-4d40-87d9-032009157c02",
+            "patient": {},
+            "room": {
+              "id": 3
+            },
+            "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+          },
+          {
+            "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+            "id": "08dfc984-43ab-41b3-a89a-3f77120657c5",
+            "patient": {},
+            "room": {
+              "id": 5
+            },
+            "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+          },
+          {
+            "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+            "id": "8661299a-7d64-4789-a200-daa8a99bf887",
+            "patient": {},
+            "room": {
+              "id": 2
+            },
+            "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+          }
+        ],
+        "careTakerName": "Helga"
+      }
+    }
+]
