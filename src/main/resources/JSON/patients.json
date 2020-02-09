@@ -1,91 +1,933 @@
 [
-    {
+  {
+    "patientId": "875c9284-9bff-469f-9301-4131e92847fe",
+    "photoName": "0001.png",
+    "firstName": "Emmanuel",
+    "lastName": "Cunningham",
+    "preferredName": "Manny",
+    "date": "Feb 8, 2020, 1:27:13 PM",
+    "dateOfBirth": "Feb 8, 2020, 1:27:13 PM",
+    "address": "23 Hosking PL",
+    "city": "Guelph",
+    "country": "Canada",
+    "zip": "N1G3R9",
+    "homePhone": "+1 (705) 812-4425",
+    "cellPhone": "+1 (519) 217-3146",
+    "patientHistory": {
+      "heartDisease": 0,
+      "anemia": 0,
+      "arthritis": 1,
+      "asthma": 2,
+      "diabetes": 2,
+      "scarletFever": 1,
+      "stroke": 0,
+      "muscularDystrophy": 2,
+      "polio": 2,
+      "epilepsy": 0,
+      "tuberculosis": 1,
+      "headaches": 2,
+      "rheumatism": 0,
+      "multipleSclerosis": 2,
+      "highBloodPressure": 2,
+      "hepatitis": 2,
+      "cancer": 1,
+      "kidneyDisorder": 0
+    },
+    "labResults": {
+      "labName": "Cancer Tests",
+      "labStartDate": "Feb 8, 2020, 1:27:13 PM",
+      "labDetails": "Lab was inconclusive there is no cancer in this man",
+      "labEndDate": "Feb 8, 2020, 1:27:13 PM"
+    },
+    "procedure": {
+      "checkInDate": "Feb 8, 2020, 1:27:13 PM",
       "patientId": "875c9284-9bff-469f-9301-4131e92847fe",
-      "firstName": "Emmanuel",
-      "lastName": "Cunningham",
-      "preferredName": "Manny",
-      "date": "Feb 8, 2020, 1:27:13 PM",
-      "dateOfBirth": "Feb 8, 2020, 1:27:13 PM",
-      "address": "23 Hosking PL",
-      "city": "Guelph",
-      "country": "Canada",
-      "zip": "N1G3R9",
-      "homePhone": "+1 (705) 812-4425",
-      "cellPhone": "+1 (519) 217-3146",
-      "patientHistory": {
-        "heartDisease": 0,
-        "anemia": 0,
-        "arthritis": 1,
-        "asthma": 2,
-        "diabetes": 2,
-        "scarletFever": 1,
-        "stroke": 0,
-        "muscularDystrophy": 2,
-        "polio": 2,
-        "epilepsy": 0,
-        "tuberculosis": 1,
-        "headaches": 2,
-        "rheumatism": 0,
-        "multipleSclerosis": 2,
-        "highBloodPressure": 2,
-        "hepatitis": 2,
-        "cancer": 1,
-        "kidneyDisorder": 0
+      "room": {
+        "id": 3
       },
-      "labResults": {
-        "labName": "Cancer Tests",
-        "labStartDate": "Feb 8, 2020, 1:27:13 PM",
-        "labDetails": "Lab was inconclusive there is no cancer in this man",
-        "labEndDate": "Feb 8, 2020, 1:27:13 PM"
-      },
-      "procedure": {
-        "checkInDate": "Feb 8, 2020, 1:27:13 PM",
-        "patientId": "875c9284-9bff-469f-9301-4131e92847fe",
-        "procedureNotes": {
-          "submittedBy": "Nurse Bob",
-          "notes": "Sometimes this man is not good"
-        }
-      },
-      "recentHistory": {
-        "previousCheckIns": [
-          {
-            "checkedIn": "Feb 8, 2020, 1:27:13 PM",
-            "id": "0c8fabb3-e7ce-4297-b99c-1a2d9e1c2d7b",
-            "patient": {},
-            "room": {
-              "id": 1
-            },
-            "checkedOut": "Feb 8, 2020, 1:27:13 PM"
-          },
-          {
-            "checkedIn": "Feb 8, 2020, 1:27:13 PM",
-            "id": "8fb625c5-2407-4d40-87d9-032009157c02",
-            "patient": {},
-            "room": {
-              "id": 3
-            },
-            "checkedOut": "Feb 8, 2020, 1:27:13 PM"
-          },
-          {
-            "checkedIn": "Feb 8, 2020, 1:27:13 PM",
-            "id": "08dfc984-43ab-41b3-a89a-3f77120657c5",
-            "patient": {},
-            "room": {
-              "id": 5
-            },
-            "checkedOut": "Feb 8, 2020, 1:27:13 PM"
-          },
-          {
-            "checkedIn": "Feb 8, 2020, 1:27:13 PM",
-            "id": "8661299a-7d64-4789-a200-daa8a99bf887",
-            "patient": {},
-            "room": {
-              "id": 2
-            },
-            "checkedOut": "Feb 8, 2020, 1:27:13 PM"
-          }
-        ],
-        "careTakerName": "Helga"
+      "procedureNotes": {
+        "submittedBy": "Nurse Bob",
+        "notes": "Sometimes this man is not good"
       }
+    },
+    "recentHistory": {
+      "previousCheckIns": [
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "0c8fabb3-e7ce-4297-b99c-1a2d9e1c2d7b",
+          "patient": {},
+          "room": {
+            "id": 1
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "8fb625c5-2407-4d40-87d9-032009157c02",
+          "patient": {},
+          "room": {
+            "id": 3
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "08dfc984-43ab-41b3-a89a-3f77120657c5",
+          "patient": {},
+          "room": {
+            "id": 5
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "8661299a-7d64-4789-a200-daa8a99bf887",
+          "patient": {},
+          "room": {
+            "id": 2
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        }
+      ],
+      "careTakerName": "Helga"
     }
+  },
+  {
+    "patientId": "4e1caade-69c8-4eef-840d-d150cc474b89",
+    "photoName": "0002.png",
+    "firstName": "Nancy",
+    "lastName": "Thornbridge",
+    "preferredName": "Nancy",
+    "date": "Feb 2, 2020, 1:27:13 PM",
+    "dateOfBirth": "Feb 23, 2000, 1:27:13 PM",
+    "address": "2323 Colonel By Drive",
+    "city": "Ottawa",
+    "country": "Canada",
+    "zip": "K1N 6N5",
+    "homePhone": "+1 (705) 813-2125",
+    "cellPhone": "+1 (519) 517-3226",
+    "patientHistory": {
+      "heartDisease": 3,
+      "anemia": 0,
+      "arthritis": 0,
+      "asthma": 1,
+      "diabetes": 2,
+      "scarletFever": 0,
+      "stroke": 0,
+      "muscularDystrophy": 0,
+      "polio": 0,
+      "epilepsy": 0,
+      "tuberculosis": 0,
+      "headaches": 4,
+      "rheumatism": 0,
+      "multipleSclerosis": 0,
+      "highBloodPressure": 4,
+      "hepatitis": 0,
+      "cancer": 0,
+      "kidneyDisorder": 0
+    },
+    "labResults": {
+      "labName": "MRI",
+      "labStartDate": "Feb 8, 2020, 1:27:13 PM",
+      "labDetails": "Lab revealed a dark mass along the spinal cord, contusions visible along thoracic vertebrae T4-T7",
+      "labEndDate": "Feb 8, 2020, 1:27:13 PM"
+    },
+    "procedure": {
+      "checkInDate": "Feb 8, 2020, 1:27:13 PM",
+      "patientId": "4e1caade-69c8-4eef-840d-d150cc474b89",
+      "room": {
+        "id": 2
+      },
+      "procedureNotes": {
+        "submittedBy": "Nurse Becky Thunberg",
+        "notes": "Patient is complaining of weakness in the left leg and shooting pains along the mid back. Normal blood pressure, but a high fever of 104.9"
+      }
+    },
+    "recentHistory": {
+      "previousCheckIns": [
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 1
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 3
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 5
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 2
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        }
+      ],
+      "careTakerName": ""
+    }
+  },
+  {
+    "patientId": "29a035cb-ad2c-4662-819b-6ea3ae96142a",
+    "photoName": "0003.png",
+    "firstName": "Paul",
+    "lastName": "Chunderson",
+    "preferredName": "Mr. Chunder",
+    "date": "Feb 8, 2020, 1:27:13 PM",
+    "dateOfBirth": "Jan 20, 1940, 1:27:13 PM",
+    "address": "433 King St",
+    "city": "Guelph",
+    "country": "Canada",
+    "zip": "N1G4R9",
+    "homePhone": "+1 (905) 842-4425",
+    "cellPhone": "",
+    "patientHistory": {
+      "heartDisease": 0,
+      "anemia": 0,
+      "arthritis": 1,
+      "asthma": 0,
+      "diabetes": 0,
+      "scarletFever": 1,
+      "stroke": 1,
+      "muscularDystrophy": 0,
+      "polio": 0,
+      "epilepsy": 0,
+      "tuberculosis": 0,
+      "headaches": 1,
+      "rheumatism": 0,
+      "multipleSclerosis": 0,
+      "highBloodPressure": 3,
+      "hepatitis": 0,
+      "cancer": 1,
+      "kidneyDisorder": 0
+    },
+    "labResults": {
+      "labName": "Cancer Tests",
+      "labStartDate": "Feb 8, 2020, 1:27:13 PM",
+      "labDetails": "Lab tested positive. Uncontrolled growth visible along the right lung. Total alveoli trepidation.",
+      "labEndDate": "Feb 8, 2020, 3:27:13 PM"
+    },
+    "procedure": {
+      "checkInDate": "Feb 8, 2020, 1:27:13 PM",
+      "patientId": "29a035cb-ad2c-4662-819b-6ea3ae96142a",
+      "room": {
+        "id": 6
+      },
+      "procedureNotes": {
+        "submittedBy": "Nurse Adam Gold",
+        "notes": "Mr. Chunder describes a persistent discomfort in his chest. He struggles to breath after running half-marathons and would like a consultation for a bionic hip"
+      }
+    },
+    "recentHistory": {
+      "previousCheckIns": [
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 1
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 3
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 5
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 2
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        }
+      ],
+      "careTakerName": "Helga"
+    }
+  },
+  {
+    "patientId": "b940ecdb-55f6-42d7-97be-28a0ecd7831a",
+    "photoName": "0004.png",
+    "firstName": "Randall",
+    "lastName": "Snorch",
+    "preferredName": "Randy",
+    "date": "Feb 2, 2020, 1:27:13 PM",
+    "dateOfBirth": "Apr 29, 1974, 9:27:13 PM",
+    "address": "202 King Edward Ave",
+    "city": "Ottawa",
+    "country": "Canada",
+    "zip": "K1N 7P5",
+    "homePhone": "+1 (613) 813-2995",
+    "cellPhone": "+1 (613) 517-3006",
+    "patientHistory": {
+      "heartDisease": 0,
+      "anemia": 0,
+      "arthritis": 0,
+      "asthma": 0,
+      "diabetes": 0,
+      "scarletFever": 0,
+      "stroke": 0,
+      "muscularDystrophy": 0,
+      "polio": 0,
+      "epilepsy": 0,
+      "tuberculosis": 0,
+      "headaches": 0,
+      "rheumatism": 0,
+      "multipleSclerosis": 0,
+      "highBloodPressure": 0,
+      "hepatitis": 0,
+      "cancer": 0,
+      "kidneyDisorder": 1
+    },
+    "labResults": {
+      "labName": "Pelvic Ultrasound",
+      "labStartDate": "Feb 8, 2019, 1:27:13 PM",
+      "labDetails": "Performed ultrasound on lower pelvis to monitor kidney for stones.",
+      "labEndDate": "Feb 8, 2019, 2:47:13 PM"
+    },
+    "procedure": {
+      "checkInDate": "Feb 8, 2020, 1:27:13 PM",
+      "patientId": "b940ecdb-55f6-42d7-97be-28a0ecd7831a",
+      "room": {
+        "id": 4
+      },
+      "procedureNotes": {
+        "submittedBy": "Nurse Gorbachev Lukas",
+        "notes": "SEVERE ALLERGY ALERT: penicillin. Patient describes tenderness along oblique abdominals and reports extreme pain during urination. Occasional blood in the urine - biweekly."
+      }
+    },
+    "recentHistory": {
+      "previousCheckIns": [
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 1
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 3
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 5
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 2
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        }
+      ],
+      "careTakerName": ""
+    }
+  },    
+  {
+    "patientId": "be2ff6c0-6199-43e8-b5d2-183c380ce185",
+    "photoName": "0005.png",
+    "firstName": "Emmett",
+    "lastName": "Jam",
+    "preferredName": "Emmett",
+    "date": "Feb 8, 2020, 4:27:13 PM",
+    "dateOfBirth": "Aug 18, 1996, 1:27:13 PM",
+    "address": "23 Treeline Ct",
+    "city": "Guelph",
+    "country": "Canada",
+    "zip": "N1G6T9",
+    "homePhone": "+1 (705) 812-9095",
+    "cellPhone": "+1 (519) 437-3142",
+    "patientHistory": {
+      "heartDisease": 0,
+      "anemia": 1,
+      "arthritis": 0,
+      "asthma": 1,
+      "diabetes": 0,
+      "scarletFever": 0,
+      "stroke": 0,
+      "muscularDystrophy": 0,
+      "polio": 0,
+      "epilepsy": 0,
+      "tuberculosis": 0,
+      "headaches": 1,
+      "rheumatism": 0,
+      "multipleSclerosis": 3,
+      "highBloodPressure": 0,
+      "hepatitis": 0,
+      "cancer": 0,
+      "kidneyDisorder": 0
+    },
+    "labResults": {
+      "labName": "Pulmonary Function Test",
+      "labStartDate": "Feb 8, 2020, 1:27:13 PM",
+      "labDetails": "Cardiopulmonary Exercise Stress Test prescribed to assess the extent of perceived lung problems. Sometimes these conditions show up only during exercise.",
+      "labEndDate": "Feb 8, 2020, 1:27:13 PM"
+    },
+    "procedure": {
+      "checkInDate": "Feb 8, 2020, 1:27:13 PM",
+      "patientId": "be2ff6c0-6199-43e8-b5d2-183c380ce185",
+      "room": {
+        "id": 5
+      },
+      "procedureNotes": {
+        "submittedBy": "Nurse Ahmad Tazzir",
+        "notes": "Mr Emmett does not like to run. He cried for many minutes but was all worth it."
+      }
+    },
+    "recentHistory": {
+      "previousCheckIns": [
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 1
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 3
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 5
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 2
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        }
+      ],
+      "careTakerName": ""
+    }
+  },
+  {
+    "patientId": "a4d9dfcf-d3a0-4faf-87c6-27aea7a55601",
+    "photoName": "0006.png",
+    "firstName": "Dave",
+    "lastName": "Ian",
+    "preferredName": "Davian",
+    "date": "Feb 8, 2020, 1:27:13 PM",
+    "dateOfBirth": "Feb 8, 2020, 1:27:13 PM",
+    "address": "303 Lancaster St",
+    "city": "Kitchener",
+    "country": "Canada",
+    "zip": "N2H4R9",
+    "homePhone": "+1 (226) 812-4425",
+    "cellPhone": "+1 (519) 712-3146",
+    "patientHistory": {
+      "heartDisease": 0,
+      "anemia": 0,
+      "arthritis": 0,
+      "asthma": 0,
+      "diabetes": 0,
+      "scarletFever": 0,
+      "stroke": 0,
+      "muscularDystrophy": 0,
+      "polio": 0,
+      "epilepsy": 0,
+      "tuberculosis": 0,
+      "headaches": 0,
+      "rheumatism": 0,
+      "multipleSclerosis": 0,
+      "highBloodPressure": 0,
+      "hepatitis": 0,
+      "cancer": 0,
+      "kidneyDisorder": 0
+    },
+    "labResults": {
+      "labName": "Physique Check",
+      "labStartDate": "Feb 1, 2020, 1:27:13 PM",
+      "labDetails": "Patient exhibits large muscles and a huge personality. Very humble and symmetrical",
+      "labEndDate": "Feb 1, 2020, 1:37:13 PM"
+    },
+    "procedure": {
+      "checkInDate": "Feb 8, 2020, 1:27:13 PM",
+      "patientId": "a4d9dfcf-d3a0-4faf-87c6-27aea7a55601",
+      "room": {
+        "id": 1
+      },
+      "procedureNotes": {
+        "submittedBy": "Nurse Bobby Susan",
+        "notes": "This man inspires me to be a better one"
+      }
+    },
+    "recentHistory": {
+      "previousCheckIns": [
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 1
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 3
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 5
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 2
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        }
+      ],
+      "careTakerName": ""
+    }
+  },
+  {
+    "patientId": "cb75acdb-2993-45bc-b0bb-0cee4abe5714",
+    "photoName": "0007.png",
+    "firstName": "Thermon",
+    "lastName": "Bilgewater",
+    "preferredName": "Thermon",
+    "date": "Feb 2, 2020, 1:27:13 PM",
+    "dateOfBirth": "Feb 23, 2000, 1:27:13 PM",
+    "address": "21 Dalhousie Rue",
+    "city": "Ottawa",
+    "country": "Canada",
+    "zip": "K1N 6N5",
+    "homePhone": "+1 (712) 813-2551",
+    "cellPhone": "+1 (352) 517-3940",
+    "patientHistory": {
+      "heartDisease": 3,
+      "anemia": 0,
+      "arthritis": 0,
+      "asthma": 1,
+      "diabetes": 2,
+      "scarletFever": 0,
+      "stroke": 0,
+      "muscularDystrophy": 0,
+      "polio": 0,
+      "epilepsy": 0,
+      "tuberculosis": 0,
+      "headaches": 4,
+      "rheumatism": 0,
+      "multipleSclerosis": 0,
+      "highBloodPressure": 4,
+      "hepatitis": 0,
+      "cancer": 0,
+      "kidneyDisorder": 0
+    },
+    "labResults": {
+      "labName": "MRI",
+      "labStartDate": "Feb 8, 2020, 1:27:13 PM",
+      "labDetails": "Lab revealed a a healthy spinal cord, no contusions visible along thoracic vertebrae",
+      "labEndDate": "Feb 8, 2020, 1:27:13 PM"
+    },
+    "procedure": {
+      "checkInDate": "Feb 8, 2020, 1:27:13 PM",
+      "patientId": "cb75acdb-2993-45bc-b0bb-0cee4abe5714",
+      "room": {
+        "id": 2
+      },
+      "procedureNotes": {
+        "submittedBy": "Nurse Becky Thunberg",
+        "notes": "Patient is complaining of weakness in the calves"
+      }
+    },
+    "recentHistory": {
+      "previousCheckIns": [
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 1
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 3
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 5
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 2
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        }
+      ],
+      "careTakerName": ""
+    }
+  },
+  {
+    "patientId": "fa1f5cc5-8bee-4aab-8dc3-5f2b2eacd02c",
+    "photoName": "0008.png",
+    "firstName": "Toby",
+    "lastName": "Flenderson",
+    "preferredName": "Toby",
+    "date": "Feb 8, 2020, 1:27:13 PM",
+    "dateOfBirth": "Jan 20, 1967, 1:27:13 PM",
+    "address": "433 Queen St",
+    "city": "Guelph",
+    "country": "Canada",
+    "zip": "N1G4R9",
+    "homePhone": "+1 (519) 842-4500",
+    "cellPhone": "",
+    "patientHistory": {
+      "heartDisease": 0,
+      "anemia": 1,
+      "arthritis": 0,
+      "asthma": 0,
+      "diabetes": 0,
+      "scarletFever": 1,
+      "stroke": 1,
+      "muscularDystrophy": 0,
+      "polio": 0,
+      "epilepsy": 0,
+      "tuberculosis": 0,
+      "headaches": 1,
+      "rheumatism": 0,
+      "multipleSclerosis": 0,
+      "highBloodPressure": 1,
+      "hepatitis": 0,
+      "cancer": 0,
+      "kidneyDisorder": 0
+    },
+    "labResults": {
+      "labName": "Complete Blood Count",
+      "labStartDate": "Feb 8, 2020, 1:27:13 PM",
+      "labDetails": "Blood tested positive for cancellation of all fun. Patient answers only to corporate.",
+      "labEndDate": "Feb 8, 2020, 3:27:13 PM"
+    },
+    "procedure": {
+      "checkInDate": "Feb 8, 2020, 1:27:13 PM",
+      "patientId": "fa1f5cc5-8bee-4aab-8dc3-5f2b2eacd02c",
+      "room": {
+        "id": 6
+      },
+      "procedureNotes": {
+        "submittedBy": "Nurse Adam Gold",
+        "notes": "Mr. Flenderson is perpetually tired"
+      }
+    },
+    "recentHistory": {
+      "previousCheckIns": [
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 1
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 3
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 5
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 2
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        }
+      ],
+      "careTakerName": ""
+    }
+  },
+  {
+    "patientId": "ea622fb1-eb90-4305-9f2f-2f1a9d356c9b",
+    "photoName": "0009.png",
+    "firstName": "Philip",
+    "lastName": "Sriracha",
+    "preferredName": "Spicy Phil",
+    "date": "Feb 2, 2020, 1:27:13 PM",
+    "dateOfBirth": "Mar 19, 1958, 9:27:13 PM",
+    "address": "202 Henderson Ave",
+    "city": "Ottawa",
+    "country": "Canada",
+    "zip": "K1N 7P5",
+    "homePhone": "+1 (613) 813-2995",
+    "cellPhone": "+1 (613) 527-3106",
+    "patientHistory": {
+      "heartDisease": 1,
+      "anemia": 0,
+      "arthritis": 0,
+      "asthma": 0,
+      "diabetes": 0,
+      "scarletFever": 0,
+      "stroke": 0,
+      "muscularDystrophy": 3,
+      "polio": 0,
+      "epilepsy": 0,
+      "tuberculosis": 0,
+      "headaches": 0,
+      "rheumatism": 0,
+      "multipleSclerosis": 0,
+      "highBloodPressure": 0,
+      "hepatitis": 0,
+      "cancer": 0,
+      "kidneyDisorder": 0
+    },
+    "labResults": {
+      "labName": "Pelvic Ultrasound",
+      "labStartDate": "Feb 8, 2019, 1:27:13 PM",
+      "labDetails": "Performed ultrasound on lower pelvis to monitor kidney for stones. Discovered enormous boulder",
+      "labEndDate": "Feb 8, 2019, 2:47:13 PM"
+    },
+    "procedure": {
+      "checkInDate": "Feb 8, 2020, 1:27:13 PM",
+      "patientId": "ea622fb1-eb90-4305-9f2f-2f1a9d356c9b",
+      "room": {
+        "id": 7
+      },
+      "procedureNotes": {
+        "submittedBy": "Nurse Gorbachev Lukas",
+        "notes": "SEVERE ALLERGY ALERT: amoxycillin. Patient describes tenderness along oblique abdominals and reports extreme pain during urination. Occasional blood in the urine - triweekly."
+      }
+    },
+    "recentHistory": {
+      "previousCheckIns": [
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 1
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 3
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 5
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 2
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        }
+      ],
+      "careTakerName": ""
+    }
+  },    
+  {
+    "patientId": "cb0fae93-83a2-4c18-88e1-762cb05557d7",
+    "photoName": "0010.png",
+    "firstName": "Lisa",
+    "lastName": "Pelosi",
+    "preferredName": "Big Lisa",
+    "date": "Feb 8, 2020, 4:27:13 PM",
+    "dateOfBirth": "Aug 18, 1996, 1:27:13 PM",
+    "address": "23 Treeline Ct",
+    "city": "Guelph",
+    "country": "Canada",
+    "zip": "N1G6T9",
+    "homePhone": "+1 (705) 812-9005",
+    "cellPhone": "+1 (519) 437-3102",
+    "patientHistory": {
+      "heartDisease": 0,
+      "anemia": 1,
+      "arthritis": 0,
+      "asthma": 3,
+      "diabetes": 0,
+      "scarletFever": 4,
+      "stroke": 1,
+      "muscularDystrophy": 0,
+      "polio": 0,
+      "epilepsy": 0,
+      "tuberculosis": 0,
+      "headaches": 1,
+      "rheumatism": 0,
+      "multipleSclerosis": 3,
+      "highBloodPressure": 4,
+      "hepatitis": 0,
+      "cancer": 0,
+      "kidneyDisorder": 1
+    },
+    "labResults": {
+      "labName": "Strep Test",
+      "labStartDate": "Feb 8, 2020, 1:27:13 PM",
+      "labDetails": "Patient recorded positive for streptococcus",
+      "labEndDate": "Feb 8, 2020, 1:27:13 PM"
+    },
+    "procedure": {
+      "checkInDate": "Feb 8, 2020, 1:27:13 PM",
+      "patientId": "cb0fae93-83a2-4c18-88e1-762cb05557d7",
+      "room": {
+        "id": 3
+      },
+      "procedureNotes": {
+        "submittedBy": "Nurse Abdiwahab Hassan",
+        "notes": "Lisa has trouble swallowing and appears to have swollen tonsils"
+      }
+    },
+    "recentHistory": {
+      "previousCheckIns": [
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 1
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 3
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 5
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        },
+        {
+          "checkedIn": "Feb 8, 2020, 1:27:13 PM",
+          "id": "",
+          "patient": {},
+          "room": {
+            "id": 2
+          },
+          "checkedOut": "Feb 8, 2020, 1:27:13 PM"
+        }
+      ],
+      "careTakerName": ""
+    }
+  }
+
 ]

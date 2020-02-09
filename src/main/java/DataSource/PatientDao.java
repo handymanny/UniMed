@@ -7,8 +7,10 @@ import java.util.ArrayList;
 
 public class PatientDao {
 
+    private LocalDataAccess json = new LocalDataAccess();
+
     public Patient getPatient (String id) {
-        for (Patient temp : LocalDataAccess.PATIENTS) {
+        for (Patient temp : json.populatePatients()) {
             if (temp.getPatientId().equals(id)) {
                 return temp;
             }
@@ -19,11 +21,11 @@ public class PatientDao {
     }
 
     public ArrayList<Patient> getAllPatients () {
-        return LocalDataAccess.PATIENTS;
+        return json.populatePatients();
     }
 
     public Patient createPatient (Patient patient) {
-        LocalDataAccess.PATIENTS.add(patient);
+        json.PATIENTS.add(patient);
         return patient;
     }
 }

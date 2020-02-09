@@ -35,18 +35,16 @@ public class CheckInResource {
 
     private void getCheckIn (String id) throws MqttException {
         // Get instance of MqttClient
-        MqttClient handler = UniMed.getMqttInstance();
         MqttMessage message = new MqttMessage(new Gson().toJson(dao.getCheckIn(id)).getBytes());
         message.setQos(0);
-        handler.publish("checkin", message);
+        publishThread("checkin", message, UniMed.mqttClient);
     }
 
     private void getAllCheckIn () throws MqttException {
         // Get instance of MqttClient
-        MqttClient handler = UniMed.getMqttInstance();
         MqttMessage message = new MqttMessage(new Gson().toJson(dao.getAllCheckIn()).getBytes());
         message.setQos(0);
-        handler.publish("checkin", message);
+        publishThread("checkin", message, UniMed.mqttClient);
     }
 
     private void createCheckIn (CheckIn checkIn) throws MqttException {
@@ -54,10 +52,18 @@ public class CheckInResource {
         dao.createCheckIn(checkIn);
 
         // Get instance of MqttClient
-        MqttClient handler = UniMed.getMqttInstance();
         MqttMessage message = new MqttMessage(new Gson().toJson(dao.getCheckIn(checkIn.getId())).getBytes());
         message.setQos(0);
-        handler.publish("checkin", message);
+        publishThread("checkin", message, UniMed.mqttClient);
     }
 
+    public void publishThread (String topic, MqttMessage message, MqttClient mqttClient) {
+        new Thread(() -> {
+            try {
+                mqttClient.publish(topic, message);
+            } catch (MqttException e) {
+                e.printStackTrace();
+            }
+        }).start();
+    }
 }

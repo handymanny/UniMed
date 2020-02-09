@@ -7,8 +7,10 @@ import java.util.ArrayList;
 
 public class CheckInDao {
 
+    private LocalDataAccess json = new LocalDataAccess();
+
     public CheckIn getCheckIn (String id) {
-        for (CheckIn temp : LocalDataAccess.CHECK_INS) {
+        for (CheckIn temp : json.populateCheckIns()) {
             if (temp.getId().equals(id)) {
                 return temp;
             }
@@ -19,11 +21,11 @@ public class CheckInDao {
     }
 
     public ArrayList<CheckIn> getAllCheckIn () {
-        return LocalDataAccess.CHECK_INS;
+        return json.CHECK_INS;
     }
 
     public CheckIn createCheckIn (CheckIn checkIn) {
-        LocalDataAccess.CHECK_INS.add(checkIn);
+        json.CHECK_INS.add(checkIn);
         return checkIn;
     }
 }

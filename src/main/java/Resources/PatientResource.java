@@ -35,18 +35,16 @@ public class PatientResource {
 
     private void getPatient (String id) throws MqttException {
         // Get instance of MqttClient
-        MqttClient handler = UniMed.getMqttInstance();
         MqttMessage message = new MqttMessage(new Gson().toJson(dao.getPatient(id)).getBytes());
         message.setQos(0);
-        handler.publish("patient", message);
+        publishThread("patient", message, UniMed.mqttClient);
     }
 
     private void getAllPatients () throws MqttException {
         // Get instance of MqttClient
-        MqttClient handler = UniMed.getMqttInstance();
         MqttMessage message = new MqttMessage(new Gson().toJson(dao.getAllPatients()).getBytes());
         message.setQos(0);
-        handler.publish("patient", message);
+        publishThread("patient", message, UniMed.mqttClient);
     }
 
     private void createPatient (Patient patient) throws MqttException {
@@ -54,9 +52,18 @@ public class PatientResource {
         dao.createPatient(patient);
 
         // Get instance of MqttClient
-        MqttClient handler = UniMed.getMqttInstance();
         MqttMessage message = new MqttMessage(new Gson().toJson(dao.getPatient(patient.getPatientId())).getBytes());
         message.setQos(0);
-        handler.publish("patient", message);
+        publishThread("patient", message, UniMed.mqttClient);
+    }
+
+    public void publishThread (String topic, MqttMessage message, MqttClient mqttClient) {
+        new Thread(() -> {
+            try {
+                mqttClient.publish(topic, message);
+            } catch (MqttException e) {
+                e.printStackTrace();
+            }
+        }).start();
     }
 }

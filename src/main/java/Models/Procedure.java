@@ -6,11 +6,13 @@ public class Procedure {
 
     private Date checkInDate;
     private String patientId;
+    private Room room;
     private ProcedureNotes procedureNotes;
 
-    public Procedure(Date checkInDate, String patientId, ProcedureNotes procedureNotes) {
+    public Procedure(Date checkInDate, String patientId, Room room, ProcedureNotes procedureNotes) {
         this.checkInDate = checkInDate;
         this.patientId = patientId;
+        this.room = room;
         this.procedureNotes = procedureNotes;
     }
 
@@ -36,5 +38,13 @@ public class Procedure {
 
     public void setProcedureNotes(ProcedureNotes procedureNotes) {
         this.procedureNotes = procedureNotes;
+    }
+
+    public Room getRoom() {
+        return room;
+    }
+
+    public void setRoom(Room room) {
+        this.room = room;
     }
 }

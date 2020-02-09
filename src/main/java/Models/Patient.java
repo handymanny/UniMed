@@ -14,6 +14,8 @@ public class Patient {
     private String lastName;
     @Expose
     private String preferredName;
+    @Expose
+    private String photoName;
 
     @Expose
     private Date date;
@@ -80,6 +82,26 @@ public class Patient {
         this.zip = zip;
         this.homePhone = homePhone;
         this.cellPhone = cellPhone;
+    }
+
+    public Patient(String patientId, String firstName, String lastName, String preferredName, String photoName, Date date, Date dateOfBirth, String address, String city, String country, String zip, String homePhone, String cellPhone, PatientHistory patientHistory, LabResults labResults, Procedure procedure, RecentHistory recentHistory) {
+        this.patientId = patientId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.preferredName = preferredName;
+        this.photoName = photoName;
+        this.date = date;
+        this.dateOfBirth = dateOfBirth;
+        this.address = address;
+        this.city = city;
+        this.country = country;
+        this.zip = zip;
+        this.homePhone = homePhone;
+        this.cellPhone = cellPhone;
+        this.patientHistory = patientHistory;
+        this.labResults = labResults;
+        this.procedure = procedure;
+        this.recentHistory = recentHistory;
     }
 
     // Getter and Setter
@@ -209,5 +231,13 @@ public class Patient {
 
     public void setRecentHistory(RecentHistory recentHistory) {
         this.recentHistory = recentHistory;
+    }
+
+    public String getPhotoName() {
+        return photoName;
+    }
+
+    public void setPhotoName(String photoName) {
+        this.photoName = photoName;
     }
 }

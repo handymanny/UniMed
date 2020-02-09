@@ -16,10 +16,12 @@ public class CustomMqttCallback implements MqttCallback {
     @Override
     public void connectionLost(Throwable throwable) {
         log.warn("Connection lost");
+        log.info(throwable.toString());
+        throwable.printStackTrace();
     }
 
     @Override
-    public void messageArrived(String s, MqttMessage mqttMessage) throws Exception {
+    public void messageArrived(String s, MqttMessage mqttMessage) {
         log.info("Message received");
 
         // Get message
@@ -31,7 +33,6 @@ public class CustomMqttCallback implements MqttCallback {
 
     @Override
     public void deliveryComplete(IMqttDeliveryToken iMqttDeliveryToken) {
-        log.info("Delivery complete");
     }
 
     // Endpoint route
@@ -56,6 +57,7 @@ public class CustomMqttCallback implements MqttCallback {
 
     // Try and parse the incoming message from front end
     public void parseMessage (String data) {
+        log.info(data);
         try {
             Message msg = new Gson().fromJson(data, Message.class);
             routeMessage(msg);
