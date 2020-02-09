@@ -16,7 +16,6 @@ class Dashboard extends Component {
             patients: []
         };
 
-        this.listView = React.createRef();
         messaging.register(this.handleMessage.bind(this));
     }
 
@@ -83,88 +82,63 @@ class Dashboard extends Component {
     render() {
         if (this.state.hasProps) {
             return (
-                <div className="container-fluid h-100 ">
-                    <div className="row no-gutters h-100">
-                        <div className="col-3" id="sidebar">
-                            <div className="row">
-                                <div className="col-xs-12" id="patient-list">
-                                    <PatientListModel patients={this.state.patients} hasProps={this.state.hasProps} />
-                                </div>
-                            </div>
-
+                <div className="container-fluid">
+                    <div className="row" id="nav_bar_row">
+                        <div className="col-md-12">
+                            <ul className="nav nav-pills">
+                                <li className="nav-item">
+                                    <a className="nav-link active" href="#">Dashboard</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">Check In</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">Create Patient</a>
+                                </li>
+                            </ul>
                         </div>
-
-                        <div className="main col-9">
-                            <div className="row">
-                                <div className="col-xs-12" id="toolbar">
-
-                                </div>
-                            </div>
-                            <div className="row">
-                                <PatientInfo/>
-                                <div className="col-xs-12" id="patient-overview">
-                                    <h2 id="patient-name">Last Name, First Name</h2>
-                                    <p id="patient-age">Age:</p>
-                                    <p id="patient-dob">Date of Birth:</p>
-                                    <p id="patient-address">Address:</p>
-                                    <p id="patient-info">Medical Info:</p>
-                                    <p id="patient-symptoms">Symptoms:</p>
-                                    <div className="row">
-                                        <div className="col-xs-12" id="medical-history">
-                                            <h2 id="hist-title">Medical History</h2>
-                                            <p id="date">[Date] - </p>
-                                        </div>
-                                    </div>
-                                </div>
-
+                    </div>
+                    <div className="row">
+                        <div className="col-md-3">
+                            <div className="row" id="patients-list">
+                                <input type="text" name="search" placeholder="Search Text" id="search-field"/>
+                                <PatientListModel patients={this.state.patients} hasProps={this.state.hasProps} />
                             </div>
                         </div>
                     </div>
+                    <PatientInfo patient={this.state.patients} />
                 </div>
             );
         } else {
             return (
-                <div className="container-fluid h-100 ">
-                    <div className="row no-gutters h-100">
-                        <div className="col-3" id="sidebar">
-                            <div className="row">
-                                <div className="col-xs-12" id="patient-list">
-                                    <h1>Loading</h1>
-                                </div>
-                            </div>
+            <div className="container-fluid">
+                <div className="row" id="nav_bar_row">
+                    <div className="col-md-12">
+                        <ul className="nav nav-pills">
+                            <li className="nav-item">
+                                <a className="nav-link active" href="#">Dashboard</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Check In</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Create Patient</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-3">
+                        <div className="row" id="patients-list">
+                            <input type="text" name="search" placeholder="Search Text" id="search-field"/>
 
-                        </div>
-
-                        <div className="main col-9">
-                            <div className="row">
-                                <div className="col-xs-12" id="toolbar">
-
-                                </div>
-                            </div>
-                            <div className="row">
-                                <h1>Loading</h1>
-                                <div className="col-xs-12" id="patient-overview">
-                                    <h2 id="patient-name">Last Name, First Name</h2>
-                                    <p id="patient-age">Age:</p>
-                                    <p id="patient-dob">Date of Birth:</p>
-                                    <p id="patient-address">Address:</p>
-                                    <p id="patient-info">Medical Info:</p>
-                                    <p id="patient-symptoms">Symptoms:</p>
-                                    <div className="row">
-                                        <div className="col-xs-12" id="medical-history">
-                                            <h2 id="hist-title">Medical History</h2>
-                                            <p id="date">[Date] - </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
             );
         }
     }
 }
 
-export default Dashboard
+export default Dashboard;
