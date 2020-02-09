@@ -464,7 +464,7 @@ class PatientInfo extends Component {
                                                         Room Number
                                                     </td>
                                                     <td id="room-no">
-                                                        {this.state.patient.recentHistory.previousCheckIns.room.id}
+                                                        {this.state.patient.procedure.room.id}
                                                     </td>
                                                 </tr>
 

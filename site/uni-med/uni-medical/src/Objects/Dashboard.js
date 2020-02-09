@@ -105,8 +105,8 @@ class Dashboard extends Component {
                                 <PatientListModel patients={this.state.patients} hasProps={this.state.hasProps} />
                             </div>
                         </div>
+                        <PatientInfo patient={this.state.patients} />
                     </div>
-                    <PatientInfo patient={this.state.patients} />
                 </div>
             );
         } else {
