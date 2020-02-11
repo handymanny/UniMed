@@ -19,11 +19,11 @@ public class UniMed {
 
     public static void main (String [] args) throws MqttException {
         // Setup Mqtt Client
-        mqttClient = new MqttClient("tcp://mr2hd0llj3vw4d.messaging.solace.cloud:1883", "unimed");
+        mqttClient = new MqttClient("", "");
         MqttConnectOptions connectionOptions = new MqttConnectOptions();
         connectionOptions.setCleanSession(true);
-        connectionOptions.setUserName("solace-cloud-client");
-        connectionOptions.setPassword("7ro1gs0aj5fqius84kd3lna12v".toCharArray());
+        connectionOptions.setUserName("");
+        connectionOptions.setPassword("".toCharArray());
         mqttClient.connect(connectionOptions);
 
         // Custom callback
